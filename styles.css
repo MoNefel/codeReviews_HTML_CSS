@@ -1,0 +1,145 @@
+/* General Reset to remove default spacing from all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; /* Set a consistent font family */
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+  }
+  
+  /* Body Styling */
+  body {
+    line-height: 1.6; /* Better text readability */
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background-color: #4CAF50; /* Green background */
+    color: #fff; /* White text color */
+    display: flex; /* Arrange items in a row */
+    justify-content: space-between; /* Space between logo and links */
+    align-items: center; /* Vertically align items */
+    padding: 1rem 2rem; /* Add padding inside navbar */
+    position: fixed; /* Navbar stays at the top of the page */
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure navbar appears on top of other content */
+  }
+  
+  .nav-logo {
+    font-size: 1.5rem; /* Logo size */
+    font-weight: bold; /* Bold text */
+  }
+  
+  .nav-links {
+    list-style: none; /* Remove bullets from list */
+    display: flex; /* Display links in a row */
+    gap: 1.5rem; /* Space between links */
+  }
+  
+  .nav-link {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* White link color */
+    font-size: 1rem; /* Set font size */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .nav-link:hover {
+    color: #c8e6c9; /* Light green color on hover */
+  }
+  
+  /* Section Styling */
+  section {
+    padding: 4rem 2rem; /* Top and bottom padding */
+    text-align: center; /* Center align all text */
+  }
+  
+  .home-section {
+    background-color: #f4f4f4; /* Light grey background */
+    margin-top: 3.5rem; /* Adjust for fixed navbar height */
+  }
+  
+  .cards-section {
+    background-color: #fff; /* White background */
+  }
+  
+  .contact-section {
+    background-color: #f4f4f4; /* Light grey background */
+  }
+  
+  /* Cards Section */
+  .cards-container {
+    display: flex; /* Arrange cards in a row */
+    justify-content: center; /* Center cards horizontally */
+    gap: 1.5rem; /* Space between cards */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    margin-top: 2rem; /* Space above cards */
+  }
+  
+  .card {
+    background-color: #fff; /* White background */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+    max-width: 200px; /* Maximum width for each card */
+    text-align: center; /* Center align card content */
+    padding: 1rem; /* Padding inside card */
+    transition: transform 0.3s; /* Smooth transform on hover */
+  }
+  
+  .card img {
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 0.5rem; /* Space below image */
+    width: 100%; /* Ensure image fits the card */
+  }
+  
+  .card h3 {
+    margin-bottom: 0.5rem; /* Space below card title */
+    color: #333; /* Dark grey text */
+  }
+  
+  .card p {
+    font-size: 0.9rem; /* Smaller font size for description */
+    color: #777; /* Light grey text */
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Lift card upwards slightly */
+  }
+  
+  /* Contact Form Styling */
+  .contact-form {
+    max-width: 400px; /* Limit form width */
+    margin: 0 auto; /* Center form horizontally */
+    display: flex;
+    flex-direction: column; /* Arrange form fields vertically */
+    gap: 1rem; /* Space between form fields */
+  }
+  
+  .contact-form label {
+    text-align: left; /* Align labels to the left */
+    font-weight: bold; /* Bold labels */
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.5rem; /* Padding inside fields */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Rounded corners */
+  }
+  
+  .contact-form button {
+    padding: 0.7rem; /* Padding for button */
+    background-color: #4CAF50; /* Green background */
+    color: #fff; /* White text color */
+    border: none; /* Remove button border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 1rem; /* Button font size */
+    transition: background-color 0.3s; /* Smooth hover effect */
+  }
+  
+  .contact-form button:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
